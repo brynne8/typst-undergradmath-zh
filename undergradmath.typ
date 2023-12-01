@@ -45,9 +45,9 @@
 })
 
 // Update date
-#let date = "2023-09-16"
+#let date = datetime.today().display()
 
-// Unavailable (last check date)
+// Unavailable (last check typst version)
 #show "??": box(text(red, [v#sys.version #emoji.crossmark]))
 // Tricky
 #show "!!": box(text(blue, emoji.drops))
